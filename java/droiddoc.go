@@ -523,7 +523,7 @@ func (j *Javadoc) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 		deps.systemModules, deps.classpath, j.sourcepaths)
 
 	cmd.FlagWithArg("-source ", javaVersion.String()).
-		Flag("-J-Xmx1024m").
+		Flag("-J-Xmx3112m").
 		Flag("-XDignore.symbol.file").
 		Flag("-Xdoclint:none")
 
